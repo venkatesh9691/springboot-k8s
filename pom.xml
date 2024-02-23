@@ -66,4 +66,16 @@
 		<finalName>springboot-crud-k8s</finalName>
 	</build>
 
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://13.48.104.52:8081/repository/mahesh/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://13.48.104.52:8081/repository/mahesh/</url>
+		</repository>
+  	</distributionManagement>
+
 </project>
