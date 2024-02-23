@@ -14,6 +14,9 @@
 	<name>springboot-crud-k8s-example</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+		<sonar.host.url>http://51.20.108.19:9000/</sonar.host.url>
+		<sonar.host.login>admin</sonar.host.login>
+		<sonar.host.password>admin</sonar.host.password>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
