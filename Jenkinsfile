@@ -90,13 +90,5 @@ pipeline {
                 }
             }
         }*/
-	    stage('SonarQube Analysis') {
-		    steps{
-        
-        withSonarQubeEnv('sonaqube') { 
-          sh "${mvnHome}/bin/mvn sonar:sonar"
-	}
-        }
-    }
     }
 }
