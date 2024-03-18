@@ -6,7 +6,7 @@ pipeline {
         maven'maven3'
     }
 	environment{
-		mvnHome =  tool name: 'maven-3', type: 'maven'
+		mvnHome =  tool name: 'maven3', type: 'maven'
 	}
 
     stages {
