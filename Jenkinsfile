@@ -87,5 +87,11 @@ pipeline {
                 }
             }
         }*/
+	    stage('SonarQube Analysis') {
+        def mvnHome =  tool name: 'maven-3', type: 'maven'
+        withSonarQubeEnv('sonaqube') { 
+          sh "${mvnHome}/bin/mvn sonar:sonar"
+        }
+    }
     }
 }
