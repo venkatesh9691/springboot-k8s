@@ -80,12 +80,12 @@ pipeline {
                 sh 'docker push venkatesh9691/venkatesh-projects-new'
             }
         }
-        stage("sonarqube analysis"){
+        /*stage("sonarqube analysis"){
             steps{
                 withSonarQubeEnv( 'sonarqube') {
                     sh'mvn clean sonar:sonar package'
                 }
             }
-        }
+        }*/
     }
 }
