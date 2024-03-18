@@ -72,7 +72,7 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://13.48.104.52:8081/repository/mahesh/</url>
+		    <url>http://51.20.181.109:8081/repository/venkat/</url>
 		 </snapshotRepository>
 		
 		<repository>
