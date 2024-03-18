@@ -5,6 +5,9 @@ pipeline {
         jdk'jdk8'
         maven'maven3'
     }
+	environment{
+		mvnHome =  tool name: 'maven-3', type: 'maven'
+	}
 
     stages {
         stage('Cloning From GIT') {
@@ -89,7 +92,7 @@ pipeline {
         }*/
 	    stage('SonarQube Analysis') {
 		    steps{
-        mvnHome =  tool name: 'maven-3', type: 'maven'
+        
         withSonarQubeEnv('sonaqube') { 
           sh "${mvnHome}/bin/mvn sonar:sonar"
 	}
